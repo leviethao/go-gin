@@ -1,0 +1,32 @@
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /css/*filepath            --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (1 handlers)
+[GIN-debug] HEAD   /css/*filepath            --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (1 handlers)
+[GIN-debug] Loaded HTML Templates (4): 
+	- 
+	- footer.html
+	- header.html
+	- index.html
+
+[GIN-debug] GET    /api/videos               --> main.main.func1 (5 handlers)
+[GIN-debug] POST   /api/videos               --> main.main.func2 (5 handlers)
+[GIN-debug] GET    /view/videos              --> example.com/hello/controller.VideoController.ShowAll-fm (5 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+::1 [14 Jul 20 23:45 +07] GET /videos %!s(int=404) 39.9778ms
+::1 [14 Jul 20 23:45 +07] GET /api/videos %!s(int=200) 44.9741ms
+::1 [14 Jul 20 23:45 +07] POST /api/videos %!s(int=200) 218.8738ms
+::1 [14 Jul 20 23:45 +07] POST /api/videos %!s(int=200) 57.9666ms
+::1 [14 Jul 20 23:45 +07] GET /api/videos %!s(int=200) 109.9373ms
+::1 [14 Jul 20 23:49 +07] GET /api/videos %!s(int=200) 151.9133ms
+::1 [14 Jul 20 23:49 +07] POST /api/videos %!s(int=200) 123.9285ms
+::1 [14 Jul 20 23:49 +07] POST /api/videos %!s(int=200) 32.9809ms
+::1 [14 Jul 20 23:49 +07] GET /api/videos %!s(int=200) 137.9206ms
+::1 [14 Jul 20 23:50 +07] GET /view/videos %!s(int=401) 999µs
+::1 [14 Jul 20 23:50 +07] GET /view/videos %!s(int=200) 86.9531ms
+::1 [14 Jul 20 23:50 +07] GET /favicon.ico %!s(int=401) 0s
+::1 [14 Jul 20 23:50 +07] GET /favicon.ico %!s(int=404) 58.966ms
+::1 [14 Jul 20 23:52 +07] GET /view/videos %!s(int=200) 61.9624ms
+::1 [14 Jul 20 23:54 +07] GET /view/videos %!s(int=200) 63.9634ms
+::1 [14 Jul 20 23:55 +07] GET /view/videos %!s(int=200) 91.946ms
